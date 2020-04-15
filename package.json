@@ -4,19 +4,23 @@
   "description": "API de gestão de tarefas",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GabrielDeveloperOne/ntask-api.git"
   },
   "author": "Gabriel Pereira",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/GabrielDeveloperOne/ntask-api/issues"
   },
   "homepage": "https://github.com/GabrielDeveloperOne/ntask-api#readme",
   "dependencies": {
-    "babel": "^6.23.0"
+    "babel": "^6.23.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
