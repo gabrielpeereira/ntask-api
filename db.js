@@ -1,0 +1,17 @@
+const Sequelize = require('sequelize');
+const config = require('./libs/config');
+
+let sequelize = null;
+
+module.exports = () => {
+    if(!sequelize) {
+        sequelize = new Sequelize(
+            config.database,
+            config.username,
+            condig.password,
+            config.params
+        );
+    }
+
+    return sequelize;
+};
