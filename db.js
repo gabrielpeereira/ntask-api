@@ -8,7 +8,7 @@ module.exports = () => {
         sequelize = new Sequelize(
             config.database,
             config.username,
-            condig.password,
+            config.password,
             config.params
         );
     }

@@ -6,7 +6,7 @@ const app = express();
 app.set("json spaces", 4);
 
 consign()
-    .includes('db.js')
+    .include('db.js')
     .then('models')
     .then('libs/middlewares.js')
     .then('routes')
