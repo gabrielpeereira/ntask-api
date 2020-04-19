@@ -8,16 +8,16 @@ module.exports = app => {
         })
         .get((req, res) => {
             Tasks.findAll({})
-            .then(result => res.json(result))
-            .catch(error => {
-                res.status(412).json({msg: error.message});
-            });
+                .then(result => res.json(result))
+                .catch(error => {
+                    res.status(412).json({ msg: error.message });
+                });
         })
         .post((req, res) => {
             Tasks.create(req.body)
                 .then(result => res.json(result))
                 .catch(error => {
-                    res.status(412).json({msg: error.message});
+                    res.status(412).json({ msg: error.message });
                 })
         })
 
@@ -27,7 +27,17 @@ module.exports = app => {
             next();
         })
         .get((req, res) => {
-            
+            Tasks.findOne({ where: req.params })
+                .then(result => {
+                    if (result) {
+                        res.json(result);
+                    } else {
+                        res.sedStatus(404);
+                    }
+                })
+                .catch(error => {
+                    res.status(412).json({ msg: error.message })
+                })
         })
         .put((req, res) => {
 
