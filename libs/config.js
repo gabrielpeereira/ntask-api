@@ -8,5 +8,8 @@ module.exports = {
         define: {
             underscored: true
         }
-    }
+    },
+
+    jwtSecret: 'Nta$K_API',
+    jwtSession: {session: false}
 };
