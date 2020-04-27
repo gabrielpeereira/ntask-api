@@ -4,7 +4,8 @@
   "description": "API de gestão de tarefas",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js"
+    "start": "babel-node index.js",
+    "test": "mocha test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,16 @@
   "dependencies": {
     "babel": "^6.23.0",
     "bcrypt": "^4.0.1",
+    "chai": "^4.2.0",
     "consign": "^0.1.6",
     "express": "^4.17.1",
     "jwt-simple": "^0.5.6",
+    "mocha": "^7.1.2",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "sequelize": "^5.21.6",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^4.1.1",
+    "supertest": "^4.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0"

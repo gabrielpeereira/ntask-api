@@ -1,13 +1,20 @@
 const passport = require('passport');
 const { Strategy } = require('passport-jwt');
 
+const ExtractJWT = require('passport-jwt').ExtractJwt;
+const JWTStrategy = require('passport-jwt').Strategy;
+
 module.exports = app => {
     const Users = app.db.models.Users;
     const cfg = app.libs.config;
 
-    const strategy = new Strategy({ scretOrKey: cfg.jwtScrete }),
+    const opts = {};
+    opts.jwtFromRequest = ExtractJWT.fromAuthHeaderWithScheme('JWT');
+    opts.secretOrKey = process.env.API_JWT_SECRET;
+
+    const strategy = new JWTStrategy(opts, { secretOrKey: cfg.jwtSecret },
     (payload, done) => {
-        Users.findByPk(payload.id)
+        Users.findById(payload.id)
             .then(user => {
                 if (user) {
                     return done(null, {
@@ -18,7 +25,8 @@ module.exports = app => {
                 return done(null, false);
             })
             .catch(error => done(error, null));
-    }
+    });
+    
     passport.use(strategy);
     return {
         initialize: () => {
