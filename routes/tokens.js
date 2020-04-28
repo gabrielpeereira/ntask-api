@@ -1,8 +1,8 @@
 const jwt = require('jwt-simple');
 
 module.exports = app => {
-    const cfg = app.list.config;
-    const Users = app.libs.config;
+    const cfg = app.libs.config;
+    const Users = app.db.models.Users;
 
     app.post('/token', (req, res) => {
         if (req.body.email && req.body.email.password) {
@@ -11,7 +11,7 @@ module.exports = app => {
 
             Users.findOne({ where: { email: email } })
                 .then(user => {
-                    if (Users.isPaaword(user.password, password)) {
+                    if (Users.isPassword(user.password, password)) {
                         const payload = { id: user.id };
 
                         res.json({
@@ -22,7 +22,7 @@ module.exports = app => {
                     }
                 }).catch(error => res.sendStatus(401));
         } else {
-            res.sendSTatus(401);
-        };
+            res.sendStatus(401);
+        }
     });
 };
