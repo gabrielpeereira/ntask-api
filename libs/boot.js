@@ -4,8 +4,8 @@ const fs = require('fs');
 module.exports = app => {
     if(process.env.NODE_ENV !== "test"){
         const credentials = {
-            key: fs.readFileSync('ntask.key', 'utf-8'),
-            cert: fs.readFileSync('ntask.cert', 'utf8')
+            key: fs.readFileSync('80259167_ntask.key', 'utf-8'),
+            cert: fs.readFileSync('80259167_ntask.cert', 'utf-8')
         }
         app.db.sequelize.sync().done(() => {
             https.createServer(credentials, app)

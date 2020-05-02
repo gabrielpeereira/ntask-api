@@ -70,3 +70,92 @@
 {"message":"::1 - - [02/May/2020:22:34:57 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
 {"message":"::1 - - [02/May/2020:22:35:04 +0000] \"GET /tasks HTTP/1.1\" 500 -\n","level":"info"}
 {"message":"::1 - - [02/May/2020:22:38:38 +0000] \"GET / HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:51:38 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"::1 - - [02/May/2020:22:52:05 +0000] \"GET / HTTP/1.1\" 200 22\n","level":"info"}
+{"message":"::1 - - [02/May/2020:22:52:05 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [02/May/2020:22:52:23 +0000] \"GET / HTTP/1.1\" 200 22\n","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:53:59 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"::1 - - [02/May/2020:22:54:04 +0000] \"GET / HTTP/1.1\" 200 22\n","level":"info"}
+{"message":"::1 - - [02/May/2020:22:54:09 +0000] \"GET / HTTP/1.1\" 200 22\n","level":"info"}
+{"message":"::1 - - [02/May/2020:22:54:09 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 19:56:18 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"::1 - - [02/May/2020:22:56:25 +0000] \"GET / HTTP/1.1\" 200 22\n","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` VARCHAR(255) NOT NULL, `done` TINYINT(1) NOT NULL DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`tasks`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_LIST(`users`)","level":"info"}
+{"message":"[Sat May 02 2020 20:06:36 GMT-0300 (Horário Padrão de Brasília)] Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)","level":"info"}
+{"message":"::1 - - [02/May/2020:23:06:39 +0000] \"GET / HTTP/1.1\" 200 22\n","level":"info"}
+{"message":"::1 - - [02/May/2020:23:07:46 +0000] \"GET / HTTP/1.1\" 200 22\n","level":"info"}
