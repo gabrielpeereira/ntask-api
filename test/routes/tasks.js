@@ -7,7 +7,13 @@ describe('Routes: Tasks', () => {
     let token;
     let fakeTask;
     beforeEach(done => {
-
+        Users.destroy({where: {}})
+        .then(() => 
+            Users.create({
+                name: "John",
+                email: "john@mail.net",
+                password: "12345"
+            }))
     });
 
     describe('GET /tasks', () => {
