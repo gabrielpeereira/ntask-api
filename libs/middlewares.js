@@ -7,7 +7,7 @@ const helmet = require('helmet');
 const logger = require('./logger');
 
 module.exports = app => {
-    app.set('port', 3000);
+    app.set('port', 3333);
     app.set('json spaces, 4');
     app.use(morgan('common', {
         stream: {
@@ -18,7 +18,7 @@ module.exports = app => {
     }));
     app.use(helmet());
     app.use(cors({
-        origin: ['http://locahost:3001'],
+        origin: ['http://locahost:3333'],
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type', 'Authorization']
     }));
